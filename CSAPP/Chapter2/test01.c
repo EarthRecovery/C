@@ -24,7 +24,8 @@ void show_pointer(void* x){
 }
 
 int main(void){
-    char* s = "abcdef";
-    // int* p1 = &x;
-    show_bytes((byte_pointer) s,sizeof(s));
+    short x = 12345;
+    short mx = -x;
+    show_bytes((byte_pointer) &x,sizeof(short));
+    show_bytes((byte_pointer) &mx,sizeof(short));
 }
